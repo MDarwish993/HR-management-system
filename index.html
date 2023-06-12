@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/style.css">
 </head>
+
 <body>
-    <header>
-        <img src="./assets/logo.jpg" alt="">
-        <nav>
-          <a href="./accounting.html">accounting</a>
-          <a href="">About</a>
-          <a href="">Services</a>
-          <a href="">Contact</a>
-        </nav>
-      </header>
-      <main>
-        <script src="./Js/app.js"></script>
-      </main>
-      <footer>
-        all right reserved &copy;2023 Amman
-        <nav>
-            <a href="">Facbook</a>
-            <a href="">Instagram</a>
-            <a href="">twitter</a>
-          </nav>
-      </footer>
+  <header>
+    <img src="./assets/logo.jpg" alt="">
+    <nav>
+      <a href="./accounting.html">accounting</a>
+      <a href="">About</a>
+      <a href="">Services</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <!--Form Section-->
+    <section id="formSection">
+      <div id="formDiv">
+      <form id="employeeForm">
+
+        <label for="fullName">Please Enter Full Name: </label><br>
+        <input type="text" id="fullName"><br>
+
+        <label for="department">Please Choose the Department: </label><br>
+        <select name="department" id="department">
+          <option value="Administration">Administration</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Development">Development</option>
+          <option value="Finance">Finance</option>
+        </select><br>
+
+        <label for="level">Please Choose the level: </label><br>
+        <select name="level" id="level">
+          <option value="Senior">Senior</option>
+          <option value="Mid-Senior">Mid-Senior</option>
+          <option value="Junior">Junior</option>
+        </select><br>
+        <label for="imageURL">Please Enter imageURL: </label><br>
+        <input type="text" id="imageURL"><br>
+        <input type="submit" value="submit" id="submitButton">
+
+      </form>
+    </div>
+    </section>
     
+    <!--employee details Section-->
+    <section id="employeeSection">
+
+    </section>
+
+
+    <script src="./Js/app.js"></script>
+  </main>
+  <footer>
+    all right reserved &copy;2023 Amman
+    <nav>
+      <a href="">Facbook</a>
+      <a href="">Instagram</a>
+      <a href="">twitter</a>
+    </nav>
+  </footer>
+
 </body>
+
 </html>
