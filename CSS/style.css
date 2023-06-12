@@ -4,7 +4,7 @@
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto Slab', serif;
   }
-  p{
+  p,label{
     font-family: 'Jost', sans-serif;
   }
 body{
@@ -13,6 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 60px;
+    background-color: #F5F0BB;
 }
 
 /* header section */
@@ -52,12 +53,54 @@ footer{
     padding-top: 5px;
     
 }
+/* main*/
 
 main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: inherit;
-    gap: 10px;
+    gap: 50px;
     
 }
+
+#formSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+#employeeForm{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    
+}
+
+#formDiv{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #5C8984;
+    box-shadow: 8px 8px #545B77;
+}
+
+#submitButton{
+    font-size: x-large;
+    border-radius: 50px;
+    background-color: #545B77;
+}
+
+
+
+#employeeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
