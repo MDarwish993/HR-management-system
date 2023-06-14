@@ -104,3 +104,15 @@ main{
     gap: 50px;
 }
 
+table , thead ,tbody,tfoot,th,td {
+    border: 1px  ;
+    text-align: center;
+    padding: 30px;
+    font-size: larger;
+    background-color: grey;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 20px;
+    
+    
+}
+
