@@ -5,13 +5,13 @@ let formEle = document.getElementById("employeeForm");
 let employeeSectionElement = document.getElementById("employeeSection");
 
 
-function Employee(employeeID, fullName, department, level, imageURL) {
+function Employee(employeeID, fullName, department, level, imageURL,salary) {
     this.employeeID = employeeID;
     this.fullName = fullName;
     this.department = department;
     this.level = level;
     this.imageURL = imageURL;
-    this.salary;
+    this.salary=salary;
     allEmployee.push(this)
 }
 
@@ -75,13 +75,19 @@ Employee.prototype.render = function () {
 
 
 let employee1 = new Employee(1000, "  Ghazi Samer  ", "Administration", "Senior", "assets/1.jpg");
+employee1.netSalary(employee1.level);
 let employee2 = new Employee(1001, "  Lana Ali  ", "Finance", "Senior", "assets/7.jpg");
+employee2.netSalary(employee2.level);
 let employee3 = new Employee(1002, "  Tamara Ayoub  ", "Marketing", "Senior", "assets/6.jpg");
+employee3.netSalary(employee3.level);
 let employee4 = new Employee(1003, "  Safi Walid  ", "Administration", "Mid-Senior", "assets/2.jpg");
+employee4.netSalary(employee4.level);
 let employee5 = new Employee(1004, "  Omar Zaid  ", "Development", "Senior", "assets/3.jpg");
+employee5.netSalary(employee5.level);
 let employee6 = new Employee(1005, "  Rana Saleh  ", "Development", "Junior", "assets/5.jpg");
+employee6.netSalary(employee6.level);
 let employee7 = new Employee(1006, "  Hadi Ahmad  ", "Finance", "Mid-Senior", "assets/4.jpg");
-
+employee7.netSalary(employee7.level);
 
 
 
@@ -126,7 +132,7 @@ function getDataFromLocalStorage() {
     if (objectArray != null) {
         for (let i = 7; i < objectArray.length; i++) {
             new Employee(objectArray[i].employeeID, objectArray[i].fullName,
-                objectArray[i].department, objectArray[i].level, objectArray[i].imageURL);
+                objectArray[i].department, objectArray[i].level, objectArray[i].imageURL,objectArray[i].salary);
         }
     }
 
@@ -138,7 +144,7 @@ getDataFromLocalStorage();
 
 function renderAllElements(){
     for (let i = 0; i < allEmployee.length; i++) {
-        allEmployee[i].netSalary(allEmployee[i].level);
+        
         allEmployee[i].render();
     
     }
